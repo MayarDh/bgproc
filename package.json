@@ -1,0 +1,52 @@
+{
+  "name": "bgproc",
+  "version": "0.1.0",
+  "description": "Simple process manager for agents",
+  "keywords": [
+    "background",
+    "cli",
+    "dev-server",
+    "process"
+  ],
+  "license": "MIT",
+  "author": "Matt Kane",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ascorbic/bgproc.git"
+  },
+  "homepage": "https://github.com/ascorbic/bgproc#readme",
+  "bugs": {
+    "url": "https://github.com/ascorbic/bgproc/issues"
+  },
+  "bin": {
+    "bgproc": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "format": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "start": "node dist/cli.mjs",
+    "test": "vitest",
+    "changeset": "changeset",
+    "release": "changeset publish"
+  },
+  "dependencies": {
+    "citty": "^0.1.6"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^22.0.0",
+    "oxfmt": "^0.27.0",
+    "oxlint": "^1.0.0",
+    "oxlint-tsgolint": "^0.11.3",
+    "tsdown": "^0.20.1",
+    "vitest": "^4.0.18"
+  }
+}
