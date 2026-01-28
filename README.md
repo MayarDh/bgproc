@@ -99,6 +99,10 @@ bgproc status -n myserver  # equivalent
 
 - `BGPROC_DATA_DIR`: Override data directory (default: `~/.local/share/bgproc`)
 
+## Platform Support
+
+macOS and Linux only. Windows is not supported.
+
 ## License
 
-MIT
+MIT © Matt Kane 2026
