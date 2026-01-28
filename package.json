@@ -19,7 +19,7 @@
     "url": "https://github.com/ascorbic/bgproc/issues"
   },
   "bin": {
-    "bgproc": "./dist/cli.mjs"
+    "bgproc": "dist/cli.mjs"
   },
   "files": [
     "dist"
